@@ -22,7 +22,7 @@ class Twitter{
       function getInfoTwitter($contenedorJson){
 
       $rawdata = "";
-      $json = json_decode($jsonraw);
+      $json = json_decode($contenedorJson);
       $num_items = count($json->statuses);
 
       for($i=0; $i<num_items; $i++){
