@@ -63,12 +63,13 @@ class Twitter{
                 $count++;
         }
       }
+      print_r($rawdata);
+      print_r(count($rawdata));
       return $rawdata;  
   }
 }
   $twitterObject = new Twitter();
   $jsonraw = $twitterObject->getTweets();
   $rawdata = $twitterObject->getInfoTwitter($jsonraw);
-  echo($rawdata);
 
 ?>
