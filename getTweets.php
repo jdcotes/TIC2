@@ -11,7 +11,7 @@ class Twitter{
                         'consumer_secret' => "IeeGjaLauKK1X9rSgd2uPlfF9kdNf9Tcidr2HQHWFtvAmQL73k");
 
       $url = 'https://api.twitter.com/1.1/search/tweets.json';
-      $getfield = '?geocode:10.9838039,-74.8880581,20km';
+      $getfield = '?geocode=10.9838039,-74.8880581,20km';
       $requestMethod = 'GET';
       $twitter = new TwitterAPIExchange($settings);
       $json = $twitter->setGetfield($getfield)
