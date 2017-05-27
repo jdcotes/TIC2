@@ -23,9 +23,8 @@ class Twitter{
     $rawdata = "";
     $json = json_decode($contenedorJson);
     $num_items = count($json->statuses);
-    echo ($num_items);
-    // for($i=0; $i<$num_items; $i++){
-    //   $user = $contenedorJson[$i];
+    for($i=0; $i<$num_items; $i++){
+    $user = $contenedorJson[$i];
     //   $fecha = $user->created_at;
     //   $url_imagen = $user->user->profile_image_url;
     //   $screen_name = $user->user->screen_name;
@@ -42,7 +41,7 @@ class Twitter{
     //   $rawdata[$i]["screen_name"]=$name;
     //   $rawdata[$i][3]=$tweet;
     //   $rawdata[$i]["tweet"]=$tweet;
-    // }
+    }
     return $rawdata;
   }
 }
