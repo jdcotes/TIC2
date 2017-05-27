@@ -53,14 +53,14 @@ class Twitter{
           $rawdata[$count][3] = $url_imagen;
           $rawdata[$count]["imagen_url"] = $url_imagen; 
           $rawdata[$count][4]="@".$screen_name;
-                $rawdata[$count]["nombre"]="@".$screen_name;
-                $rawdata[$count][5]=$tweet;
-                $rawdata[$count]["tweet"]=$tweet;
-                $rawdata[$count][6]=$latitud;
-                $rawdata[$count]["latitud"]=$latitud;
-                $rawdata[$count][7]=$longitud;
-                $rawdata[$count]["longitud"]=$longitud;
-                $count++;
+          $rawdata[$count]["nombre"]="@".$screen_name;
+          $rawdata[$count][5]=$tweet;
+          $rawdata[$count]["tweet"]=$tweet;
+          $rawdata[$count][6]=$latitud;
+          $rawdata[$count]["latitud"]=$latitud;
+          $rawdata[$count][7]=$longitud;
+          $rawdata[$count]["longitud"]=$longitud;
+          $count++;
         }
       }
       print_r($rawdata);
