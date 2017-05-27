@@ -19,37 +19,35 @@ class Twitter{
                 ->performRequest();
       return $json;
   }
-      function getInfoTwitter($contenedorJson){
+  function getInfoTwitter($contenedorJson){
+    $rawdata = "";
+    $json = json_decode($contenedorJson);
+    $num_items = count($json->statuses);
+    echo ($num_items);
+    // for($i=0; $i<$num_items; $i++){
+    //   $user = $contenedorJson[$i];
+    //   $fecha = $user->created_at;
+    //   $url_imagen = $user->user->profile_image_url;
+    //   $screen_name = $user->user->screen_name;
+    //   $tweet = $user->text;
 
-      $rawdata = "";
-      $json = json_decode($contenedorJson);
-      $num_items = count($json->statuses);
+    //   $imagen = "<a href='https://twitter.com/".$screen_name."' target=_blank><img src=".$url_imagen."></img></a>";
+    //   $name = "<a href='https://twitter.com/".$screen_name."' target=_blank>@".$screen_name."</a>";
 
-      for($i=0; $i<num_items; $i++){
-          $user = $json[$i];
-          $fecha = $user->created_at;
-          $url_imagen = $user->user->profile_image_url;
-          $screen_name = $user->user->screen_name;
-          $tweet = $user->text;
-
-          $imagen = "<a href='https://twitter.com/".$screen_name."' target=_blank><img src=".$url_imagen."></img></a>";
-          $name = "<a href='https://twitter.com/".$screen_name."' target=_blank>@".$screen_name."</a>";
-
-          $rawdata[$i][0]=$fecha;
-          $rawdata[$i]["FECHA"]=$fecha;
-          $rawdata[$i][1]=$imagen;
-          $rawdata[$i]["imagen"]=$imagen;
-          $rawdata[$i][2]=$name;
-          $rawdata[$i]["screen_name"]=$name;
-          $rawdata[$i][3]=$tweet;
-          $rawdata[$i]["tweet"]=$tweet;
-      }
-      return $rawdata;
-    }
+    //   $rawdata[$i][0]=$fecha;
+    //   $rawdata[$i]["FECHA"]=$fecha;
+    //   $rawdata[$i][1]=$imagen;
+    //   $rawdata[$i]["imagen"]=$imagen;
+    //   $rawdata[$i][2]=$name;
+    //   $rawdata[$i]["screen_name"]=$name;
+    //   $rawdata[$i][3]=$tweet;
+    //   $rawdata[$i]["tweet"]=$tweet;
+    // }
+    return $rawdata;
+  }
 }
   $twitterObject = new Twitter();
   $jsonraw = $twitterObject->getTweets();
   $rawdata = $twitterObject->getInfoTwitter($jsonraw);
-  echo($rawdata);
 
 ?>
