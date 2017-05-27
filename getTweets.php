@@ -71,7 +71,7 @@ class Twitter{
 }
   $twitterObject = new Twitter();
   $jsonraw = $twitterObject->getTweets();
-  $rawdata = $twitterObject->fdf_get_encoding($jsonraw);
+  $rawdata = $twitterObject->getInfoTwitter($jsonraw);
   echo($rawdata);
 
 ?>
