@@ -25,7 +25,8 @@ class Twitter{
     $num_items = count($json->statuses);
     for($i=0; $i<$num_items; $i++){
     $user = $contenedorJson[$i];
-    //   $fecha = $user->created_at;
+    $fecha = $user->created_at;
+    echo($fecha);
     //   $url_imagen = $user->user->profile_image_url;
     //   $screen_name = $user->user->screen_name;
     //   $tweet = $user->text;
