@@ -25,8 +25,8 @@ class Twitter{
       $json = "";
       for($i=0;$i<count($contenedorJson);$i++){
         
-        $json = $contenedorJson[$i];
-        $json = json_decode($json);
+        //$json = $contenedorJson[$i];
+        $json = json_decode($contenedorJson);
         $num_items = count($json->statuses);
 
         for ($j=0; $j<$num_items; $j++){
