@@ -48,6 +48,7 @@ class Twitter{
 }
   $twitterObject = new Twitter();
   $jsonraw = $twitterObject->getTweets();
+  echo($jsonraw);
   $rawdata = $twitterObject->getInfoTwitter($jsonraw);
 
 ?>
