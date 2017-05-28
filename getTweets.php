@@ -81,7 +81,7 @@ class Twitter{
       for($i=0;$i<$filas;$i++){
            echo "<tr>";
            for($j=0;$j<$columnas;$j++){
-               echo "<td>".$rawdata[$i][$j]."</td>";
+               echo "<td>".$rawdata[$j][$i]."</td>";
            }
            echo "</tr>";
       }
