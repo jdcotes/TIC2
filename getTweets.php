@@ -67,26 +67,26 @@ class Twitter{
   }
     function displayTable($rawdata){
       //DIBUJAR TABLA
-      //echo '<table border=1';
-      $columnas = count($rawdata[0])/2;
-      echo $columnas;
-      $filas = count($rawdata);
-      echo $filas;
-      //echo "<br>".$filas."<br>";
-      //Añadimos los titulos
-      //for($i=1;$i<count($rawdata[0]);$i=$i+1){
-      //    next($rawdata[0]);
-      //    echo "<th><b>".key($rawdata[0])."</b></th>";
-      //    next($rawdata[0]);
-      //}
-      //for($i=0;$i<$filas;$i++){
-      //    echo "<tr>";
-      //    for($j=0;$j<$columnas;$j++){
-      //        echo "<td>".$rawdata[$i][$j]."</td>";
-      //    }
-      //    echo "</tr>";
-      //}
-      //echo '</table>';
+      echo $rawdata[0];
+      // echo '<table border=1';
+      // $columnas = count($rawdata[0])/2;
+      // //echo $columnas;
+      // $filas = count($rawdata);
+      // //echo "<br>".$filas."<br>";
+      // //Añadimos los titulos
+      // for($i=1;$i<count($rawdata[0]);$i=$i+2){
+      //     next($rawdata[0]);
+      //     echo "<th><b>".key($rawdata[0])."</b></th>";
+      //     next($rawdata[0]);
+      // }
+      // for($i=0;$i<$filas;$i++){
+      //     echo "<tr>";
+      //     for($j=0;$j<$columnas;$j++){
+      //         echo "<td>".$rawdata[$i][$j]."</td>";
+      //     }
+      //     echo "</tr>";
+      // }
+      // echo '</table>';
   }
 }
   $twitterObject = new Twitter();
