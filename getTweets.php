@@ -71,7 +71,8 @@ class Twitter{
       // echo '<table border=1';
       $columnas = count($rawdata[0])/2;
       echo $columnas;
-      // $filas = count($rawdata);
+      $filas = count($rawdata);
+      echo $filas;
       // //echo "<br>".$filas."<br>";
       // //Añadimos los titulos
       // for($i=1;$i<count($rawdata[0]);$i=$i+2){
