@@ -69,8 +69,8 @@ class Twitter{
       //DIBUJAR TABLA
       print_r($rawdata[0]);
       // echo '<table border=1';
-      // $columnas = count($rawdata[0])/2;
-      // //echo $columnas;
+      $columnas = count($rawdata[0])/2;
+      echo $columnas;
       // $filas = count($rawdata);
       // //echo "<br>".$filas."<br>";
       // //Añadimos los titulos
