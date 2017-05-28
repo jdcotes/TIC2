@@ -84,7 +84,7 @@ class Twitter{
       //         echo "<td>".$rawdata[$i][$j]."</td>";
       //     }
       //     echo "</tr>";
-      }
+      //}
       echo '</table>';
       print_r($rawdata[0][1]);
   }
