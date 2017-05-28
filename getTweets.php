@@ -1,3 +1,4 @@
+<meta charset="utf-8">
 <?php
 
 class Twitter{
@@ -50,15 +51,15 @@ class Twitter{
           $rawdata[$count]["Fecha"] = $fecha;
           $rawdata[$count][1] = $imagen;
           $rawdata[$count]["Imagen"] = $imagen;
-          $rawdata[$count][3] = $url_imagen;
+          $rawdata[$count][2] = $url_imagen;
           $rawdata[$count]["Imagen_url"] = $url_imagen; 
-          $rawdata[$count][4]="@".$screen_name;
+          $rawdata[$count][3]="@".$screen_name;
           $rawdata[$count]["Nombre"]="@".$screen_name;
-          $rawdata[$count][5]=$tweet;
+          $rawdata[$count][4]=$tweet;
           $rawdata[$count]["Tweet"]=$tweet;
-          $rawdata[$count][6]=$latitud;
+          $rawdata[$count][5]=$latitud;
           $rawdata[$count]["Latitud"]=$latitud;
-          $rawdata[$count][7]=$longitud;
+          $rawdata[$count][6]=$longitud;
           $rawdata[$count]["Longitud"]=$longitud;
           $count++;
         }
@@ -82,6 +83,7 @@ class Twitter{
            echo "<tr>";
            for($j=0;$j<$columnas;$j++){
                echo "<td>".$rawdata[$i][$j]."</td>";
+              }
            }
            echo "</tr>";
       }
