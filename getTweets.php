@@ -86,7 +86,7 @@ class Twitter{
       //     echo "</tr>";
       //}
       echo '</table>';
-      print_r($rawdata[0][2]);
+      print_r($rawdata[0][0]);
   }
 }
   $twitterObject = new Twitter();
