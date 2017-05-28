@@ -67,11 +67,12 @@ class Twitter{
   }
     function displayTable($rawdata){
       //DIBUJAR TABLA
-      echo '<table border=1';
+      //echo '<table border=1';
       $columnas = count($rawdata[0])/2;
       echo $columnas;
       $filas = count($rawdata);
-      echo "<br>".$filas."<br>";
+      echo $filas;
+      //echo "<br>".$filas."<br>";
       //Añadimos los titulos
       //for($i=1;$i<count($rawdata[0]);$i=$i+1){
       //    next($rawdata[0]);
