@@ -78,10 +78,10 @@ class Twitter{
            echo "<th><b>".key($rawdata[0])."</b></th>";
            next($rawdata[0]);
       }
-      for($i=0;$i<$filas;$i++){
+      for($i=0;$i<$columnas;$i++){
            echo "<tr>";
-           for($j=0;$j<$columnas;$j++){
-               echo "<td>".$rawdata[$j][$i]."</td>";
+           for($j=0;$j<$filas;$j++){
+               echo "<td>".$rawdata[$i][$j]."</td>";
            }
            echo "</tr>";
       }
