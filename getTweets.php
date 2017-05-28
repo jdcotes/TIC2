@@ -67,7 +67,7 @@ class Twitter{
   }
     function displayTable($rawdata){
       //DIBUJAR TABLA
-      echo $rawdata[0];
+      print_r($rawdata[0]);
       // echo '<table border=1';
       // $columnas = count($rawdata[0])/2;
       // //echo $columnas;
