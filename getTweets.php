@@ -73,7 +73,7 @@ class Twitter{
       $filas = count($rawdata);
       //echo "<br>".$filas."<br>";
       //Añadimos los titulos
-      for($i=1;$i<count($rawdata[0]);$i=$i+2){
+      for($i=1;$i<count($rawdata[0]);$i=$i+1){
           next($rawdata[0]);
           echo "<th><b>".key($rawdata[0])."</b></th>";
           next($rawdata[0]);
